@@ -3,6 +3,7 @@ import { HomeProps } from "@types";
 import { fuels, yearsOfProduction } from "@constants";
 import { CarCard, ShowMore, SearchBar, CustomFilter, Hero } from "@components";
 import BoockCar from "@components/BookCar";
+import PlanTrip from "@components/PlanTrip";
 
 export default async function Home({ searchParams }: HomeProps) {
    //  const allCars = await fetchCars({
@@ -202,6 +203,8 @@ export default async function Home({ searchParams }: HomeProps) {
                </div>
             )}
          </div>
+
+         <PlanTrip />
       </main>
    );
 }

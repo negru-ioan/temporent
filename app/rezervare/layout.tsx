@@ -1,5 +1,5 @@
 export const metadata = {
-   title: "Car Hub - rezervări",
+   title: "Temporent - rezervări",
    description: "Discover world's best car showcase application",
 };
 

@@ -68,25 +68,25 @@ export const fuels = [
 
 export const footerLinks = [
    {
-      title: "About",
+      title: "Despre",
       links: [
-         { title: "How it works", url: "/" },
-         { title: "Featured", url: "/" },
-         { title: "Partnership", url: "/" },
-         { title: "Bussiness Relation", url: "/" },
+         { title: "Cum funționează", url: "/" },
+         { title: "Recomandate", url: "/" },
+         { title: "Parteneriat", url: "/" },
+         { title: "Relația de Afaceri", url: "/" },
       ],
    },
    {
-      title: "Company",
+      title: "Companie",
       links: [
-         { title: "Events", url: "/" },
+         { title: "Evenimente", url: "/" },
          { title: "Blog", url: "/" },
          { title: "Podcast", url: "/" },
-         { title: "Invite a friend", url: "/" },
+         { title: "Invită un prieten", url: "/" },
       ],
    },
    {
-      title: "Socials",
+      title: "Rețele Sociale",
       links: [
          { title: "Discord", url: "/" },
          { title: "Instagram", url: "/" },
