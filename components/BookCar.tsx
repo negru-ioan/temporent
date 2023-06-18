@@ -19,7 +19,7 @@ function BoockCar() {
 
    return (
       <div className="flex justify-center flex-1 max-sm:mt-0 my-32 md:px-0 lg:px-10">
-         <div className="w-full pt-10 pb-8 md:pb-0 px-4 mx-2 md:mx-8 sm:mx-14 sm:px-8 shadow-2xl">
+         <div className="max-w-7xl w-full pt-10 pb-8 md:pb-0 px-4 mx-2 md:mx-8 sm:mx-14 sm:px-8 shadow-2xl">
             <h1 className="text-4xl font-extrabold pb-8 text-black-100 max-sm:pl-3">
                Închiriază o mașină
             </h1>

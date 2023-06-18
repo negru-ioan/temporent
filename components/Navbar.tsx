@@ -14,9 +14,19 @@ const NavBar = () => (
                height={16}
                className="object-contain"
             />
-            <h3 className="font-extrabold text-2xl pl-4">Temporent</h3>
+            <h3 className="max-sm:hidden font-extrabold text-2xl pl-4">
+               Temporent
+            </h3>
          </Link>
 
+         <ul className="list-none hidden sm:flex gap-4">
+            <li>
+               <Link href="/despre">Despre</Link>
+            </li>
+            <li>
+               <Link href="/masini">Masini</Link>
+            </li>
+         </ul>
          <CustomButton
             title="Sign in"
             btnType="button"

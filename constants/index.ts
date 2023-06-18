@@ -70,28 +70,28 @@ export const footerLinks = [
    {
       title: "Despre",
       links: [
-         { title: "Cum funționează", url: "/" },
-         { title: "Recomandate", url: "/" },
-         { title: "Parteneriat", url: "/" },
-         { title: "Relația de Afaceri", url: "/" },
+         { title: "Cum funționează", url: "/despre" },
+         { title: "Recomandate", url: "/despre" },
+         { title: "Parteneriat", url: "/despre" },
+         { title: "Relația de Afaceri", url: "/despre" },
       ],
    },
    {
       title: "Companie",
       links: [
-         { title: "Evenimente", url: "/" },
-         { title: "Blog", url: "/" },
-         { title: "Podcast", url: "/" },
-         { title: "Invită un prieten", url: "/" },
+         { title: "Evenimente", url: "/despre" },
+         { title: "Blog", url: "/despre" },
+         { title: "Podcast", url: "/despre" },
+         { title: "Invită un prieten", url: "/despre" },
       ],
    },
    {
       title: "Rețele Sociale",
       links: [
-         { title: "Discord", url: "/" },
-         { title: "Instagram", url: "/" },
-         { title: "Twitter", url: "/" },
-         { title: "Facebook", url: "/" },
+         { title: "Discord", url: "/masini" },
+         { title: "Instagram", url: "/masini" },
+         { title: "Twitter", url: "/masini" },
+         { title: "Facebook", url: "/masini" },
       ],
    },
 ];

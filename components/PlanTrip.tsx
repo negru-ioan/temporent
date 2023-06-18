@@ -4,13 +4,13 @@ function PlanTrip() {
    return (
       <>
          <section className="plan-section bg-white py-28">
-            <div className="container max-width px-44">
+            <div className="container max-width px-0 sm:px-44">
                <div className="plan-container">
                   <div className="plan-container__title mx-auto text-center text-black">
-                     <h3 className="text-3xl font-medium">
+                     <h3 className="text-xl sm:text-3xl font-medium">
                         Planificați-vă călătoria acum
                      </h3>
-                     <h2 className="text-5xl font-semibold my-8">
+                     <h2 className="text-3xl sm:text-5xl font-semibold my-8">
                         Închiriați o mașină rapid și ușor
                      </h2>
                   </div>

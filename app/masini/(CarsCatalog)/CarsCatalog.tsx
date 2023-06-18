@@ -1,20 +1,7 @@
-import { fetchCars } from "@utils";
-import { HomeProps } from "@types";
+import { CarCard, CustomFilter, SearchBar, ShowMore } from "@components";
 import { fuels, yearsOfProduction } from "@constants";
-import { CarCard, ShowMore, SearchBar, CustomFilter, Hero } from "@components";
-import BoockCar from "@components/BookCar";
-import PlanTrip from "@components/PlanTrip";
-import CarsCatalog from "./masini/(CarsCatalog)/CarsCatalog";
 
-export default async function Home({ searchParams }: HomeProps) {
-   //  const allCars = await fetchCars({
-   //    manufacturer: searchParams.manufacturer || "",
-   //    year: searchParams.year || 2022,
-   //    fuel: searchParams.fuel || "",
-   //    limit: searchParams.limit || 10,
-   //    model: searchParams.model || "",
-   //  });
-
+function CarsCatalog() {
    const allCars: any = [
       {
          city_mpg: 19,
@@ -162,14 +149,48 @@ export default async function Home({ searchParams }: HomeProps) {
       !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
    return (
-      <main className="overflow-hidden">
-         <Hero />
+      <>
+         <div className="mt-12 padding-x padding-y max-width" id="discover">
+            <div className="home__text-container">
+               <h1 className="text-4xl font-extrabold">Catalog de Mașini</h1>
+               <p>Explorează mașinile care ți s-ar putea potrivi.</p>
+            </div>
 
-         <BoockCar />
+            <div className="home__filters">
+               <SearchBar />
 
-         <CarsCatalog />
+               <div className="home__filter-container">
+                  <CustomFilter title="fuel" options={fuels} />
+                  <CustomFilter title="year" options={yearsOfProduction} />
+               </div>
+            </div>
 
-         <PlanTrip />
-      </main>
+            {!isDataEmpty ? (
+               <section>
+                  <div className="home__cars-wrapper">
+                     {allCars?.map((car) => (
+                        <CarCard car={car} />
+                     ))}
+                  </div>
+
+                  <ShowMore
+                     //  pageNumber={(searchParams.limit || 10) / 10}
+                     //  isNext={(searchParams.limit || 10) > allCars.length}
+                     pageNumber={1}
+                     isNext={10 > allCars.length}
+                  />
+               </section>
+            ) : (
+               <div className="home__error-container">
+                  <h2 className="text-black text-xl font-bold">
+                     Oops, no results
+                  </h2>
+                  <p>{allCars?.message}</p>
+               </div>
+            )}
+         </div>
+      </>
    );
 }
+
+export default CarsCatalog;
