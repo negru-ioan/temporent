@@ -52,7 +52,12 @@ function BoockCar() {
                <div
                   className="search-manufacturer__input flex justify-between rounded-full"
                   style={{ paddingLeft: "18px" }}
-                  onClick={(e) => e.currentTarget.lastChild?.focus()}
+                  onClick={(e) => {
+                     const lastChild = e?.currentTarget?.lastChild;
+                     if (lastChild instanceof HTMLElement) {
+                        lastChild.focus();
+                     }
+                  }}
                >
                   <div className="tooltip">
                      Preluare
@@ -71,7 +76,12 @@ function BoockCar() {
                <div
                   className="search-manufacturer__input flex justify-between rounded-full"
                   style={{ paddingLeft: "18px" }}
-                  onClick={(e) => e.currentTarget.lastChild?.focus()}
+                  onClick={(e) => {
+                     const lastChild = e?.currentTarget?.lastChild;
+                     if (lastChild instanceof HTMLElement) {
+                        lastChild.focus();
+                     }
+                  }}
                >
                   <div className="tooltip">
                      Returnare
@@ -90,7 +100,12 @@ function BoockCar() {
                <div
                   className="search-manufacturer__input flex justify-between rounded-full"
                   style={{ paddingLeft: "18px" }}
-                  onClick={(e) => e.currentTarget.lastChild?.focus()}
+                  onClick={(e) => {
+                     const lastChild = e?.currentTarget?.lastChild;
+                     if (lastChild instanceof HTMLElement) {
+                        lastChild.focus();
+                     }
+                  }}
                >
                   <div className="tooltip">
                      Ora
